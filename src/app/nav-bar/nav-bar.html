@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1930;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: #1c2b49;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 80px;
+            background: #24395b;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .sidebar div {
+            width: 50px;
+            height: 50px;
+            background: #ffffff22;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .chart {
+            width: 100%;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Dashboard</h1>
+        <span>User: Robert Weller</span>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="content">
+            <div class="card">
+                <h2>Application Information</h2>
+                <p><strong>Century Medical Group</strong></p>
+                <p>Application No: 172JBL4D</p>
+                <p>Application Type: New Rendering</p>
+                <p>Specialty: New Rendering</p>
+                <p>Days Remaining: 20</p>
+                <p>Provider Type: Physician</p>
+            </div>
+            <div class="chart"></div>
+        </div>
+    </div>
+</body>
+</html>

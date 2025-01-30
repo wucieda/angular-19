@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Santander</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background: #d50000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .navbar .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .navbar .buttons a {
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+        .btn-solid {
+            background: white;
+            color: #d50000;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Banco_Santander_Logotipo.svg/120px-Banco_Santander_Logotipo.svg.png" alt="Santander">
+            Santander
+        </div>
+        <div class="menu">
+            <a href="#">PARTICULARES</a>
+            <a href="#">EMPRESAS Y AUTÓNOMOS</a>
+            <a href="#">BANCA PRIVADA</a>
+            <a href="#">SELECT</a>
+        </div>
+        <div class="buttons">
+            <a href="#" class="btn-outline">HAZTE CLIENTE</a>
+            <a href="#" class="btn-solid">ACCESO CLIENTES</a>
+        </div>
+    </nav>
+
+</body>
+</html>
